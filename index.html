@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+   <!-- own css page  -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Bootstrap css  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    
+   <!-- Favicon Link -->
+   <link rel="icon" type="Image/svg" href="bootstrap.svg">
+
+  <title>Bootstrap UI</title>
+</head>
+
+<body>
+  <!-- Navigation Bar section  -->
+  <header id="home" >
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#" >Bootstrap UI</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5" >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" >Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="card">Card</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacts" >Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacts">Contacts</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+   
+  <main>
+    <!-- Carousel Section  -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.pexels.com/photos/1133957/pexels-photo-1133957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Follwer</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button type="button" class="btn btn-primary">Call to Action</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.pexels.com/photos/2325447/pexels-photo-2325447.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.pexels.com/photos/46160/field-clouds-sky-earth-46160.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit?</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+
+    <!-- Custom Flex Section -->
+    <section class="container mt-5 mb-5">
+      <div class="row text-center justify-content-center">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img 
+              src="https://images.pexels.com/photos/17485678/pexels-photo-17485678/free-photo-of-an-artist-s-illustration-of-artificial-intelligence-ai-this-image-depicts-how-ai-could-be-used-in-the-field-of-sustainability-from-biodiversity-to-climate-it-was-created-by-nidia-dias.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              class="img-fluid w-100" style="height: 200px; object-fit: cover;" alt="Image 1" />
+            <p class="mt-2">AI Image Generator</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img 
+              src="https://images.pexels.com/photos/8093459/pexels-photo-8093459.jpeg?auto=compress&cs=tinysrgb&w=600"
+              class="img-fluid w-100" style="height: 200px; object-fit: cover;" alt="Image 2" />
+            <p class="mt-2">Falling Down Water Drops</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img 
+              src="https://images.pexels.com/photos/17483908/pexels-photo-17483908/free-photo-of-an-artist-s-illustration-of-artificial-intelligence-ai-this-image-represents-the-concept-of-artificial-general-intelligence-agi-and-its-potential-for-medicine-and-biology-it-was-crea.png?auto=compress&cs=tinysrgb&w=600"
+              class="img-fluid w-100" style="height: 200px; object-fit: cover;" alt="Image 3" />
+            <p class="mt-2">Gratisography</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <!-- grid-gallery  -->
+    <section id="gallery">
+      <div class="container grid-container">
+        <div class="item item1">
+          <img
+            src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="item 1" />
+        </div>
+
+        <div class="item item2 grid-container2">
+          <div class="item">
+            <img
+              src="https://images.pexels.com/photos/1072851/pexels-photo-1072851.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="item 1" />
+          </div>
+          <div class="item">
+            <img
+              src="https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="item 1" />
+          </div>
+          <div class="item">
+            <img
+              src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="item 1" />
+          </div>
+          <div class="item">
+            <img
+              src="https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+          </div>
+          <div class="item">
+            <img
+              src="https://images.pexels.com/photos/1666315/pexels-photo-1666315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="item 1" />
+          </div>
+          <div class="item">
+            <img
+              src="https://images.pexels.com/photos/27588251/pexels-photo-27588251/free-photo-of-smart-home-monitoring-devices-empty-screen-mobile-phone-mockup.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="item 1" />
+          </div>
+        </div>
+
+        <div class="item item3">
+          <img
+            src="https://images.pexels.com/photos/2085831/pexels-photo-2085831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="item 1" />
+        </div>
+        <div class="item item4">
+          <img
+            src="https://images.pexels.com/photos/5473956/pexels-photo-5473956.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="item 1" />
+        </div>
+      </div>
+    </section>
+
+    <!-- card section  -->
+    <section id="card" class="container mt-5">
+      <div class="row justify-content-center">
+        
+        <div class="col-12 col-md-4 p-3">
+          <div class="card">
+            <img
+              src="https://images.pexels.com/photos/25630341/pexels-photo-25630341/free-photo-of-an-abstract-graphic.jpeg?auto=compress&cs=tinysrgb&w=600"
+              class="card-img-top" alt="Card Image 1" />
+            <div class="card-body">
+              <h5 class="card-title">Card 1</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary btn-custom">Call To Top</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 p-3">
+          <div class="card">
+            <img
+              src="https://images.pexels.com/photos/25630351/pexels-photo-25630351/free-photo-of-bstract-glass-structures-in-dynamic-composition.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              class="card-img-top" alt="Card Image 2" />
+            <div class="card-body">
+              <h5 class="card-title">Card 2</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary btn-custom">Call To Top</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 p-3">
+          <div class="card">
+            <img
+              src="https://images.pexels.com/photos/17485657/pexels-photo-17485657/free-photo-of-an-artist-s-illustration-of-artificial-intelligence-ai-this-image-depicts-how-ai-could-adapt-to-an-infinite-amount-of-uses-it-was-created-by-nidia-dias-as-part-of-the-visualising-ai-pr.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              class="card-img-top" alt="Card Image 3" />
+            <div class="card-body">
+              <h5 class="card-title">Card 3</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary btn-custom">Call To Top</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacts" class="bg-light pt-4 pb-4">
+    <div id="footer" class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-12 col-sm-4 usefullink mb-4 mb-md-0">
+          <h4>Useful Links</h4>
+          <ul class="list-unstyled lh-lg">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 morelink mb-4 mb-md-0">
+          <h4>More Links</h4>
+          <ul class="list-unstyled lh-lg">
+            <li><a href="#">Link 4</a></li>
+            <li><a href="#">Link 5</a></li>
+            <li><a href="#">Link 6</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 contacts">
+          <h4>Contact Us</h4>
+          <p>Email: <span>Bootstrap@gmail.com</span></p>
+          <p>Phone: <span>7584029453</span></p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-12 d-flex justify-content-between flex-column flex-md-row align-items-center">
+          <p class="mb-2 mb-md-0">
+            &copy; 2024 Complex UI. All Rights Reserved.
+          </p>
+          <a class="btn btn-primary" href="#home" role="button">Back To Top</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
